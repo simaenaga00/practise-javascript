@@ -1,19 +1,14 @@
-<!doctype html>
-
-<html lang="jp">
+<!DOCTYPE html>
+<html lang="ja">
     <head>
-     <meta charset="utf-8"> 
-     <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <title>生年月日を入力</title>
+        <script src="main.js" defer></script>
     </head>
     <body>
-        <h1>The World!!</h1>
-        <h2>ハッピーうれぴーよろぴくねー</h2>
-        <p id="text">色が変わるよ</p>
-        <button onclick="changeColor()">いいや限界だ！押すね！今だっ！！</button>
-        <button onclick="increaseCount()">モールス信号打つみてぇにな…</button>
-        <button onclick="herasuCount()">減らすカチカチ</button>
-        <p id="white">やったぞ！発動した！</p>
-        <p id="counter"></p>
+        <h1>生年月日を入力</h1>
+        <input id="month" placeholder="月を入力してください">
+        <input id="day" placeholder="日を入力してください">
+        <button onclick="errorInput()">入力</button>
     </body>
-    <script src="main.js"></script>
 </html>

@@ -1,17 +1,20 @@
-document.getElementById("white").style.color = "white";
-function changeColor(){
-document.getElementById("text").style.color = "red";
-document.getElementById("white").style.color = "black";
-}
+//クリックされたら動作する
 
-//document.getElementByID("text").style.color = "red";
-/* これは、ドキュメントの中の「text」*/
-let count = 0;
-function increaseCount(){
-    count++;
-    document.getElementById("counter").innerText=count;
+function errorInput(){
+    console.log(document.getElementById("month").value)
+    console.log(document.getElementById("day").value)
+
+    const month = document.getElementById("month").value
+    const day = document.getElementById("day").value
+
+    console.log("month:",month,"day:"day)
+    
 }
-function herasuCount(){
-    count--;
-    document.getElementById("counter").innerText=count;
-}
+//document.getElementById("month")はタグを確認するだけ
+//valueはそのタグの値を示す
+
+/*
+javaScriptのプログラムとHTMLファイルはどこで対応しているか
+タグのついているIDで紐づく
+タグの中にある付加情報のことを属性という
+*/
