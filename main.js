@@ -10,6 +10,17 @@ function errorInput(){
     console.log("Month:",month,"Day:",day);
     
 }
+
+const monthSelect = document.getElementById("month2");
+monthSelectList();
+monthSelectList(){
+    for(let i=1;i<12;i++){
+        let option = document.createElement("option")
+        option.value = i;
+        option.textContent = i;
+        monthSelect,appendChild(option);
+    }
+}
 //document.getElementById("month")はタグを確認するだけ
 //valueはそのタグの値を示す
 
