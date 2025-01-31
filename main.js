@@ -1,3 +1,16 @@
+const gameSelector = document.getElementById('game-select');
+const gameContainer = document.getElementById('game-container');
+gameSelector.addEventListener('change',function(){
+    gameContainer.innerHTML = '';
+    switch(gameSelector.value){
+        case'number-guess':
+            startNumberGuessGame();
+            break;
+        case'clicker':
+            ClickCounterGame();
+            break;
+    }
+});
 function ClickCounterGame(){
     let count = 0;//countという変数を準備して０を代入する
     const gameContainer = document.getElementById("game-container");
@@ -37,7 +50,6 @@ function ClickCounterGame(){
     gameContainer.appendChild(button3);
     gameContainer.appendChild(counter);
 }
-ClickCounterGame();
 
 function startNumberGuessGame(){
     const gameContainer = document.getElementById("game-container");
@@ -71,4 +83,3 @@ function startNumberGuessGame(){
     countDisplay,textContent = `試行回数: ${count}`;
     gameContainer.appendChild(countDisplay)
 }
-startNumberGuessGame();
